@@ -1,0 +1,13 @@
+CREATE DATABASE Bamazon;
+USE bamazon;
+CREATE TABLE products (ItemID int AUTO_INCREMENT, ProductName VARCHAR(90) NOT NULL, DepartmentName VARCHAR(90) NOT NULL, Price DECIMAL(10,2) NOT NULL, StockQuantity int NOT NULL, PRIMARY KEY(ItemID));
+INSERT INTO products (ProductName, DepartmentName, Price, StockQuantity) VALUES ('Invisible Monsters', 'Books', 8.48, 15);
+INSERT INTO products (ProductName, DepartmentName, Price, StockQuantity) VALUES ('Super hairdryer', 'Health and Beauty', 39.99, 57);
+INSERT INTO products (ProductName, DepartmentName, Price, StockQuantity) VALUES ('Poki 13 inch laptop', 'Electronics', 699.99, 3);
+INSERT INTO products (ProductName, DepartmentName, Price, StockQuantity) VALUES ('Chi Chi maxi dress', 'clothing', 29.05, 43);
+INSERT INTO products (ProductName, DepartmentName, Price, StockQuantity) VALUES ('Mistborn', 'Books', 26.07, 34);
+INSERT INTO products (ProductName, DepartmentName, Price, StockQuantity) VALUES ('Curlees curling wand', 'Health and Beauty', 219.10, 10);
+INSERT INTO products (ProductName, DepartmentName, Price, StockQuantity) VALUES ('The Name of the Wind', 'books', 5.47, 72);
+INSERT INTO products (ProductName, DepartmentName, Price, StockQuantity) VALUES ('Sweeti skater dress', 'Clothing', 32.99, 16);
+INSERT INTO products (ProductName, DepartmentName, Price, StockQuantity) VALUES ('Samos 60 inch TV', 'Electronics', 2163.80, 16);
+INSERT INTO products (ProductName, DepartmentName, Price, StockQuantity) VALUES ('Leviathan Wakes', 'Books', 10.11, 111);
