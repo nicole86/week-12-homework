@@ -16,5 +16,8 @@ var displayProducts = function() {
 }
 displayProducts();
 
- 
+prompt.get(['What is the ID of the product you would like to buy?', 'How many would you like to buy?'], function(err, result){
+
+});
+
 connection.end();
