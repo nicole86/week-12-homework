@@ -9,15 +9,12 @@ var connection = mysql.createConnection({
  
 connection.connect();
  
-connection.query('SELECT * FROM products', function(err, rows, fields) {
-  if (err) throw err;
- 
-  for (var i = 0; i < rows.length; i++) {
-  	var str = 
-  	console.log(rows[i]);
+var displayProducts = function() {
+    connection.query('SELECT * FROM products', function(err, res) {
+        console.log(res);
+    });
+}
+displayProducts();
 
-  };
-
-});
  
 connection.end();
